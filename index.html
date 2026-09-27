@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پۆرتفۆلیۆی کەسی | ناوی خۆت لێرە بنووسە</title>
+    
+    <!-- فڕەیمۆرکی Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- فۆنتی کوردی Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ئایکۆنەکانی FontAwesome بۆ سۆشیاڵ میدیا و بەشەکان -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-violet-600 selection:text-white">
+
+    <!-- ١. مێنوی سەرەوە (Navbar) -->
+    <nav class="sticky top-0 z-50 backdrop-blur-lg bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold bg-gradient-to-l from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+                ئـارام کـەریـم
+            </a>
+            <div class="hidden md:flex gap-8 text-slate-300 font-medium text-sm">
+                <a href="#about" class="hover:text-violet-400 transition">دەربارەی من</a>
+                <a href="#skills" class="hover:text-violet-400 transition">لێهاتووییەکان</a>
+                <a href="#projects" class="hover:text-violet-400 transition">نموونەی کارەکان</a>
+                <a href="#experience" class="hover:text-violet-400 transition">ئەزموون و CV</a>
+            </div>
+            <a href="#contact" class="bg-violet-600 hover:bg-violet-500 text-white px-5 py-2 rounded-xl text-sm font-semibold transition shadow-lg shadow-violet-600/25">
+                پەیوەندیم پێوە بکە
+            </a>
+        </div>
+    </nav>
+
+    <!-- ٢. بەشی ناساندن و پرۆفایل (Hero & About Section) -->
+    <header id="about" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <!-- نووسینەکان -->
+        <div class="md:w-3/5 text-center md:text-right">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                ئامادەم بۆ وەرگرتنی پڕۆژەی نوێ
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                سڵاو، من <span class="bg-gradient-to-l from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">ئارام کەریم</span>ـم
+            </h1>
+            <h2 class="text-xl md:text-2xl text-slate-300 font-semibold mb-6">
+                گەشەپێدەری وێبسایت و دیزاینەری UI/UX
+            </h2>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                ئەزموونی زیاتر لە ٣ ساڵم هەیە لە دروستکردنی وێبسایت و ئەپڵیکەیشنی مۆدێرن. هەمیشە هەوڵ دەدەم تەکنەلۆژیا و دیزاینی سەردەمیانە تێکەڵ بکەم بۆ دروستکردنی بەرهەمی خێرا و سەرنجڕاکێش.
+            </p>
+            
+            <!-- دوگمەکان و سۆشیاڵ میدیا -->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                <a href="#projects" class="bg-white text-slate-950 hover:bg-slate-200 px-7 py-3.5 rounded-xl font-bold transition flex items-center gap-2">
+                    <span>بینینی کارەکانم</span>
+                    <i class="fa-solid fa-arrow-left text-sm"></i>
+                </a>
+                <a href="#" download class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white px-7 py-3.5 rounded-xl font-bold transition flex items-center gap-2">
+                    <i class="fa-solid fa-download text-violet-400"></i>
+                    <span>دابەزاندنی CV</span>
+                </a>
+            </div>
+
+            <!-- ئایکۆنەکانی سۆشیاڵ میدیا -->
+            <div class="flex items-center justify-center md:justify-start gap-4 mt-8">
+                <a href="https://github.com" target="_blank" class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-violet-500 transition text-lg">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-500 transition text-lg">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-500 transition text-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:border-blue-500 transition text-lg">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- وێنەی پرۆفایل -->
+        <div class="md:w-2/5 flex justify-center">
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden border-2 border-violet-500/40 shadow-2xl shadow-violet-600/20 relative z-10">
+                    <!-- لێرەدا لینکی وێنەی خۆت دابنێ -->
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="وێنەی پرۆفایل" class="w-full h-full object-cover">
+                </div>
+                <!-- باکگراوندی ڕووناک لە پشت وێنەکەوە -->
+                <div class="absolute -inset-4 bg-gradient-to-tr from-violet-600/30 to-cyan-500/30 blur-2xl -z-10 rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ٣. بەشی لێهاتووییەکان (Skills Section) -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-extrabold mb-3">لێهاتوویی و تواناکانم</h2>
+            <p class="text-slate-400">ئەو تەکنەلۆژیا و ئامرازانەی ڕۆژانە کاریان پێ دەکەم</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- لێهاتوویی ١ -->
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
+                <div class="flex justify-between mb-2 font-bold">
+                    <span>HTML5 & CSS3 / Tailwind CSS</span>
+                    <span class="text-violet-400">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-l from-violet-500 to-cyan-400 h-full rounded-full" style="width: 95%"></div>
+                </div>
+            </div>
+
+            <!-- لێهاتوویی ٢ -->
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
+                <div class="flex justify-between mb-2 font-bold">
+                    <span>JavaScript & React.js</span>
+                    <span class="text-violet-400">85%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-l from-violet-500 to-cyan-400 h-full rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <!-- لێهاتوویی ٣ -->
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
+                <div class="flex justify-between mb-2 font-bold">
+                    <span>UI / UX Design (Figma)</span>
+                    <span class="text-violet-400">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-l from-violet-500 to-cyan-400 h-full rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <!-- لێهاتوویی ٤ -->
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
+                <div class="flex justify-between mb-2 font-bold">
+                    <span>Git & GitHub / Firebase</span>
+                    <span class="text-violet-400">80%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-l from-violet-500 to-cyan-400 h-full rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ٤. بەشی نموونەی کارەکان (Portfolio Projects) -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-extrabold mb-3">نموونەی کار و پڕۆژەکانم</h2>
+            <p class="text-slate-400">بەشێک لەو پڕۆژانەی لە ماوەی ڕابردوودا جێبەجێم کردوون</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- پڕۆژەی ١ -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden group hover:border-violet-500/50 transition duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="پڕۆژەی یەکەم" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-2 mb-3">
+                        <span class="text-xs bg-violet-500/10 text-violet-300 px-2.5 py-1 rounded-md">React</span>
+                        <span class="text-xs bg-cyan-500/10 text-cyan-300 px-2.5 py-1 rounded-md">Tailwind</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">سیستەمی بەڕێوەبردنی فرۆشگا</h3>
+                    <p class="text-slate-400 text-sm mb-5 leading-relaxed">داشبۆردێکی پێشکەوتوو بۆ چاودێریکردنی فرۆش و کۆگا بە شێوەی ڕاستەوخۆ.</p>
+                    <a href="#" class="text-violet-400 hover:text-violet-300 text-sm font-bold inline-flex items-center gap-2">
+                        <span>بینینی پڕۆژەکە</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- پڕۆژەی ٢ -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-500/50 transition duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80" alt="پڕۆژەی دووەم" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-2 mb-3">
+                        <span class="text-xs bg-fuchsia-500/10 text-fuchsia-300 px-2.5 py-1 rounded-md">UI/UX</span>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-300 px-2.5 py-1 rounded-md">HTML/JS</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">وێبسایتی گەشتیاری کوردستان</h3>
+                    <p class="text-slate-400 text-sm mb-5 leading-relaxed">ڕێبەری دیجیتاڵی بۆ ناساندنی شوێنە گەشتیارییەکان و حیجزکردنی هۆتێل.</p>
+                    <a href="#" class="text-cyan-400 hover:text-cyan-300 text-sm font-bold inline-flex items-center gap-2">
+                        <span>بینینی پڕۆژەکە</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- پڕۆژەی ٣ -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden group hover:border-fuchsia-500/50 transition duration-300">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="پڕۆژەی سێیەم" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-2 mb-3">
+                        <span class="text-xs bg-amber-500/10 text-amber-300 px-2.5 py-1 rounded-md">Mobile App</span>
+                        <span class="text-xs bg-violet-500/10 text-violet-300 px-2.5 py-1 rounded-md">Figma</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">ئەپڵیکەیشنی گەیاندنی خێرا</h3>
+                    <p class="text-slate-400 text-sm mb-5 leading-relaxed">دیزاینی ئەپڵیکەیشنێکی مۆبایل بۆ داواکردنی خواردن و دیاریکردنی شوێن لەسەر نەخشە.</p>
+                    <a href="#" class="text-fuchsia-400 hover:text-fuchsia-300 text-sm font-bold inline-flex items-center gap-2">
+                        <span>بینینی پڕۆژەکە</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ٥. بەشی ئەزموونی کار و بڕوانامە (CV / Experience) -->
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-extrabold mb-3">ئەزموونی کار و خوێندن</h2>
+            <p class="text-slate-400">کورتەیەک لە وێستگە گرنگەکانی ژیانی پیشەییم</p>
+        </div>
+
+        <div class="space-y-6 relative before:absolute before:inset-0 before:mr-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-800">
+            <!-- وێستگەی ١ -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-950 bg-violet-600 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fa-solid fa-briefcase text-xs"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-violet-400">٢٠٢٤ - ئێستا</span>
+                    <h3 class="text-lg font-bold mt-1">گەشەپێدەری باڵای وێب</h3>
+                    <p class="text-slate-400 text-sm mt-2">کارکردن لەسەر دروستکردنی سیستەمی ئەلیکترۆنی و پەرەپێدانی ڕووکاری بەکارهێنەر بۆ کۆمپانیا ناوخۆییەکان.</p>
+                </div>
+            </div>
+
+            <!-- وێستگەی ٢ -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-950 bg-cyan-600 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fa-solid fa-graduation-cap text-xs"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <span class="text-xs font-bold text-cyan-400">٢٠٢٠ - ٢٠٢٤</span>
+                    <h3 class="text-lg font-bold mt-1">بەکالۆریۆس لە زانستی کۆمپیوتەر</h3>
+                    <p class="text-slate-400 text-sm mt-2">تەواوکردنی خوێندنی زانکۆ بە پلەی نایاب و جێبەجێکردنی چەندین پڕۆژەی ئەکادیمی.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ٦. بەشی پەیوەندیکردن (Contact Section) -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="bg-gradient-to-br from-slate-900 to-slate-900/40 border border-slate-800 rounded-3xl p-8 md:p-12 text-center">
+            <h2 class="text-3xl font-extrabold mb-4">ئامادەیت پڕۆژەیەکی نوێ دەست پێ بکەین؟</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                ئەگەر بیرۆکەیەکت هەیە یان دەتەوێت کارێکی هاوبەش ئەنجام بدەین، ڕاستەوخۆ لە ڕێگەی ئیمەیڵ یان وەتسئەپەوە نامەم بۆ بنێرە.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:info@example.com" class="bg-violet-600 hover:bg-violet-500 text-white px-8 py-4 rounded-xl font-bold transition inline-flex items-center gap-3 shadow-lg shadow-violet-600/30">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ناردنی ئیمەیڵ</span>
+                </a>
+                <a href="https://wa.me/9647500000000" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition inline-flex items-center gap-3 shadow-lg shadow-emerald-600/30">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>نامەی وەتسئەپ</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ٧. فووتەر (Footer) -->
+    <footer class="border-t border-slate-900 py-8 text-center text-slate-500 text-sm">
+        هەموو مافێک پارێزراوە © ٢٠٢٦ | دیزاین و پەرەپێدان لەلایەن <span class="text-slate-300 font-semibold">ئارام کەریم</span>
+    </footer>
+
+</body>
+</html>
